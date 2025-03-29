@@ -1,11 +1,11 @@
-import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
-import { InputText } from "../../components/input-text";
+import logo from "../../assets/logo.svg";
 import { Button } from "../../components/button";
+import { InputText } from "../../components/input-text";
 
 export function SignIn() {
 	return (
-		<div className="flex flex-col md:flex-row bg-dark-400 min-h-screen w-screen">
+		<div className="flex flex-col md:flex-row bg-dark-400 min-h-screen w-screen justify-center items-center">
 			<section
 				id="logo-section"
 				className="flex items-center justify-center gap-2 md:gap-4 py-8 md:py-0 w-full"
@@ -44,9 +44,17 @@ export function SignIn() {
 						label="Senha"
 					/>
 
-					<Button type="submit" className="mt-2">Entrar</Button>
+					<Button type="submit" className="mt-2">
+						Entrar
+					</Button>
 
-					<Link to="/signup" className="text-light-100 font-medium text-sm font-poppins text-center mt-2">Criar uma conta</Link>
+					<Link
+						to="/signup"
+						className="text-light-100 font-medium text-sm font-poppins text-center mt-2
+					"
+					>
+						Criar uma conta
+					</Link>
 				</form>
 			</section>
 		</div>
