@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
-import { Button } from "../../components/button";
-import { InputText } from "../../components/input-text";
+import { Button } from "../../components/Button";
+import { InputText } from "../../components/InputText";
 
 export function SignUp() {
 	return (
@@ -35,7 +35,7 @@ export function SignUp() {
 						type="text"
 						onChange={() => {}}
 						label="Seu nome"
-					/>	
+					/>
 
 					<InputText
 						name="email"
