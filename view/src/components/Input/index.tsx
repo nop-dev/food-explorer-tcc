@@ -17,7 +17,7 @@ export function InputText({ name, placeholder, type, onChange, label }: InputTex
 				name={name}
 				placeholder={placeholder}
 				onChange={onChange}
-				className="bg-dark-900 rounded-lg px-3.5 py-4 text-light-500 focus:border-2 focus:border-none"
+				className="bg-dark-800 rounded-lg px-3.5 py-3 text-light-500 focus:border-2 focus:border-none"
 			/>
 		</div>
 	);

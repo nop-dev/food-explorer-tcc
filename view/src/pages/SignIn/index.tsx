@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { Button } from "../../components/Button";
-import { InputText } from "../../components/InputText";
+import { InputText } from "../../components/Input";
 
 export function SignIn() {
 	return (
