@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { Button } from "../../components/Button";
-import { InputText } from "../../components/Input";
+import { Input } from "../../components/Input";
 
 export function SignUp() {
 	return (
@@ -29,7 +29,7 @@ export function SignUp() {
 						Faça o seu cadastro
 					</h1>
 
-					<InputText
+					<Input
 						name="name"
 						placeholder="Ex: João Silva"
 						type="text"
@@ -37,14 +37,14 @@ export function SignUp() {
 						label="Seu nome"
 					/>
 
-					<InputText
+					<Input
 						name="email"
 						placeholder="E-mail"
 						type="email"
 						onChange={() => {}}
 						label="E-mail"
 					/>
-					<InputText
+					<Input
 						name="password"
 						placeholder="Senha"
 						type="password"

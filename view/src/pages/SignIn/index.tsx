@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { Button } from "../../components/Button";
-import { InputText } from "../../components/Input";
+import { Input } from "../../components/Input";
 
 export function SignIn() {
 	return (
@@ -29,14 +29,14 @@ export function SignIn() {
 						Faça o seu login
 					</h1>
 
-					<InputText
+					<Input
 						name="email"
 						placeholder="E-mail"
 						type="email"
 						onChange={() => {}}
 						label="E-mail"
 					/>
-					<InputText
+					<Input
 						name="password"
 						placeholder="Senha"
 						type="password"
