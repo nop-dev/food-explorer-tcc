@@ -2,11 +2,13 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/server.ts",
-    "dev:watch": "nodemon --exec tsx src/server.ts"
+    "dev:watch": "nodemon --exec tsx src/server.ts",
+    "knex:migrate": "tsx knex-cli.ts migrate:latest",
+    "knex:rollback": "tsx knex-cli.ts migrate:rollback"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/knex": "^0.15.2",
+    "@types/knex": "^3.0.0",
     "@types/node": "^22.14.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
@@ -30,3 +32,8 @@
   "type": "module",
   "description": ""
 }
+
+
+
+
+
