@@ -1,18 +1,25 @@
 {
   "scripts": {
     "build": "tsc",
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "dev:watch": "nodemon --exec tsx src/server.ts"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@types/knex": "^0.15.2",
     "@types/node": "^22.14.0",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.1",
-    "express": "^5.1.0"
+    "bcrypt": "^5.1.1",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7"
   },
   "name": "api",
   "version": "1.0.0",
@@ -23,5 +30,3 @@
   "type": "module",
   "description": ""
 }
-
-
