@@ -33,6 +33,7 @@ class SessionsController {
 				id: user.id,
 				name: user.name,
 				email: user.email,
+				isAdmin: user.is_admin
 			}),
 			{
 				httpOnly: true,

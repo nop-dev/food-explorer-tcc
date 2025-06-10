@@ -83,7 +83,7 @@ class UserController {
 		
 		const user = await knex("users")
 			.where({ id: userId })
-			.select("id", "name", "email")
+			.select("id", "name", "email", "is_admin")
 			.first();
 			
 		if (!user) {
