@@ -9,5 +9,6 @@ const userController = new UserController();
 
 usersRoutes.post("/", userController.create);
 usersRoutes.put("/:user_id", ensureAuthentication, userController.update);
+usersRoutes.get("/profile", ensureAuthentication, userController.profile);
 
 export { usersRoutes };

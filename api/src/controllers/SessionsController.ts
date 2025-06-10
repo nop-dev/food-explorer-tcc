@@ -43,6 +43,11 @@ class SessionsController {
 
 		return res.json("Sessão criada com sucesso...").status(201);
 	}
+
+	async logout(req, res) {
+		res.clearCookie('user');
+		return res.json("Sessão encerrada com sucesso...").status(200);
+	}
 }
 
 export { SessionsController };

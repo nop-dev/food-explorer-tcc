@@ -77,6 +77,21 @@ class UserController {
 
 		return res.json("Usuário atualizado com sucesso...").status(201);
 	}
+
+	async profile(req, res) {
+		const userId = JSON.parse(req.cookies.user).id;
+		
+		const user = await knex("users")
+			.where({ id: userId })
+			.select("id", "name", "email")
+			.first();
+			
+		if (!user) {
+			throw new AppError("Usuário não encontrado");
+		}
+		
+		return res.json(user);
+	}
 }
 
 export { UserController };
